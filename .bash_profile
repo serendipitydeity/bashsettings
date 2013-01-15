@@ -31,3 +31,4 @@ export GREP_OPTIONS='--line-number --color=auto --binary-files=without-match'
 export GREP_COLOR='1;32'
 export PATH=/usr/local/bin:$PATH:$HOME/bin:/opt/local/bin/:/usr/bin/Play20:/usr/bin/scala/bin:/usr/bin/sbt/bin:.
 export PYTHONPATH=$PYTHONPATH:/Library/Python/2.7/site-packages/PySide:/usr/include/PySide
+export LC_ALL="ko_KR.UTF-8"
