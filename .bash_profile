@@ -14,6 +14,10 @@ NO_COLOUR="\[\033[0m\]"
 
 PS1="$GREEN\u@$HOSTNAME$NO_COLOUR:\w$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
 
+if [ -x /usr/bin/dircolors ]; then
+    alias ls='ls --color=auto'
+fi
+
 alias vi='vim'
 alias la='ls -Alh'
 alias l='ls -CF'
