@@ -24,11 +24,13 @@ alias l='ls -CF'
 alias rm='rm -i'
 alias mv='mv -i'
 
+export VISUAL=vim
+export EDITOR=vim
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxcxegedabagacad
 export LS_OPTIONS='--color=auto'
 export GREP_OPTIONS='--line-number --color=auto --binary-files=without-match'
 export GREP_COLOR='1;32'
-export PATH=/usr/local/bin:$PATH:$HOME/bin:/opt/local/bin/:/usr/bin/Play20:/usr/bin/scala/bin:/usr/bin/sbt/bin:.
+export PATH=/usr/local/bin:$PATH:$HOME/bin:/opt/local/bin/:.
 export PYTHONPATH=$PYTHONPATH:/Library/Python/2.7/site-packages/PySide:/usr/include/PySide
 export LC_ALL="ko_KR.UTF-8"
