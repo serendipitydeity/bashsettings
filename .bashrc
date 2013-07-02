@@ -7,6 +7,8 @@ export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 # ... or force ignoredups and ignorespace
 export HISTCONTROL=ignoreboth
 
+source ~/.git-completion.bash
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
