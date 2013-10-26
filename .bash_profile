@@ -29,8 +29,7 @@ export LSCOLORS=exfxcxdxcxegedabagacad
 export LS_OPTIONS='--color=auto'
 export GREP_OPTIONS='--line-number --color=auto --binary-files=without-match'
 export GREP_COLOR='1;32'
-export PATH=$PATH:/usr/local/bin:$HOME/.rvm/bin:$HOME/play/:$HOME/.rvm/gems/ruby-1.9.3-p362/bin:.
-export PYTHONPATH=$PYTHONPATH:/Library/Python/2.7/site-packages/PySide:/usr/include/PySide
+export PATH=$PATH:/usr/local/bin:.
 export LC_ALL="ko_KR.UTF-8"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
