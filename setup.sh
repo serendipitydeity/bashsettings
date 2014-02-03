@@ -6,3 +6,4 @@ cp .bash_profile ~/
 cp .bashrc ~/
 cp .git-completion.bash ~/
 cp .irbrc ~/
+cp .gemrc ~/
