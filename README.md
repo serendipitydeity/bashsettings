@@ -1,1 +1,4 @@
-brew install source-highlight
+brew install
+
+source-highlight
+direnv
