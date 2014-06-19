@@ -31,5 +31,7 @@ export GREP_OPTIONS='--line-number --color=auto --binary-files=without-match'
 export GREP_COLOR='1;32'
 export PATH=$PATH:/usr/local/bin:.
 export LC_ALL="ko_KR.UTF-8"
+export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"     
+export LESS=' -R '
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
