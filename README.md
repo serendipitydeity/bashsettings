@@ -1,4 +1,4 @@
-brew install
+#How to use
 
-source-highlight
-direnv
+
+Run *./setup.sh* to install the plugins
