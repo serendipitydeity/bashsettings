@@ -2,8 +2,8 @@
 
 echo "This script replaces the current bash / irb settings!"
 
-cp .bash_profile ~/
-cp .bashrc ~/
-cp .git-completion.bash ~/
-cp .irbrc ~/
-cp .gemrc ~/
+cp `dirname $0`/.bash_profile ~/
+cp `dirname $0`/.bashrc ~/
+cp `dirname $0`/.git-completion.bash ~/
+cp `dirname $0`/.irbrc ~/
+cp `dirname $0`/.gemrc ~/
