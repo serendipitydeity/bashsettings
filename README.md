@@ -1,4 +1,3 @@
 #How to use
 
-
-Run *./setup.sh* to install the plugins
+Copy .bash_profile to $HOME
