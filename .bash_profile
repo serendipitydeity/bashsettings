@@ -18,6 +18,9 @@ if [ -x /usr/local/bin/direnv ]; then
   eval "$(direnv hook bash)"
 fi 
 
+# Enable rbenv
+eval "$(rbenv init -)"
+
 # Refresh window size after each command
 shopt -s checkwinsize 
 
