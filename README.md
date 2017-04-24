@@ -1,3 +1,3 @@
 #How to use
 
-Copy .bash_profile to $HOME
+Copy .bash_profile and .inputrc to $HOME
