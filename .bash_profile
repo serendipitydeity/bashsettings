@@ -53,11 +53,18 @@ function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/:\1/'
 }
 
+show_virtual_env() {
+  if [ -n "$VIRTUAL_ENV"  ]; then
+    echo "($(basename $VIRTUAL_ENV))"
+  fi
+}
+
 export RED="\[\033[0;31m\]"
 export YELLOW="\[\033[0;33m\]"
 export GREEN="\[\033[0;32m\]"
 export NO_COLOUR="\[\033[0m\]" 
 export PS1="$GREEN\u@$HOSTNAME$NO_COLOUR:\w$YELLOW\$(parse_git_branch)$NO_COLOUR\$ " 
+export PS1='$(show_virtual_env)'$PS1 
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxcxegedabagacad
 export LS_OPTIONS='--color=auto'
@@ -67,3 +74,18 @@ export LC_ALL="ko_KR.UTF-8"
 export LESS=' -R '
 export TERM='xterm-256color' 
 export HISTCONTROL=ignoreboth # Don't put duplicates in bash history 
+
+# Enable direnv if direnv is present
+if [ -x /usr/local/bin/direnv ]; then
+  eval "$(direnv hook bash)"
+fi 
+
+# Enable rbenv
+if [ -x $HOME/.rbenv/bin/rbenv ]; then
+  eval "$(rbenv init -)"
+fi
+
+# Enable pyenv
+if [ -x $HOME/.pyenv/bin/pyenv ]; then
+  eval "$(pyenv init -)" 
+fi
