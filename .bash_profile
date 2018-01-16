@@ -13,11 +13,6 @@ if [ -x /usr/bin/dircolors ]; then
   alias ls='ls --color=auto'
 fi
 
-# Enable direnv if direnv is present
-if [ -x /usr/local/bin/direnv ]; then
-  eval "$(direnv hook bash)"
-fi 
-
 # Refresh window size after each command
 shopt -s checkwinsize 
 
@@ -66,7 +61,7 @@ export CLICOLOR=1
 export LSCOLORS=exfxcxdxcxegedabagacad
 export LS_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
-export PATH=$PATH:/usr/local/bin:.
+export PATH=$PATH:/usr/local/bin:$HOME/.rbenv/bin:$HOME/.pyenv/bin:.
 export LC_ALL="ko_KR.UTF-8"
 export LESS=' -R '
 export TERM='xterm-256color' 
@@ -86,3 +81,9 @@ fi
 if [ -x $HOME/.pyenv/bin/pyenv ]; then
   eval "$(pyenv init -)" 
 fi
+
+# Enable direnv
+if [ -x /usr/local/bin/direnv ]; then
+  eval "$(direnv hook bash)"
+fi 
+
