@@ -81,9 +81,3 @@ fi
 if [ -x $HOME/.pyenv/bin/pyenv ]; then
   eval "$(pyenv init -)" 
 fi
-
-# Enable direnv
-if [ -x /usr/local/bin/direnv ]; then
-  eval "$(direnv hook bash)"
-fi 
-
